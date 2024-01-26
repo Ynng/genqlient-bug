@@ -1,0 +1,18 @@
+
+union FooBar = A | B
+
+type A{
+    value: String
+}
+
+type B{
+    name: String
+}
+
+type Foo {
+    bar: FooBar!
+}
+
+type Query {
+    QueryName: Foo!
+}

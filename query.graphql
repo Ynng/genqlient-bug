@@ -1,0 +1,15 @@
+fragment FooBar on FooBar {
+    __typename
+}
+
+fragment Foo on Foo {
+    bar {
+        ...FooBar
+    }
+}
+
+query QueryName {
+    QueryName {
+        ...Foo
+    }
+}
